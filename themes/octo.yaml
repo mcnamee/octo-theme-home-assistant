@@ -1,0 +1,304 @@
+# Octo - a monospace, low-colour theme for Home Assistant
+# Palette: near-black surfaces, warm off-white text, one slate-blue accent, one greige neutral.
+# Optional: install card-mod (HACS) for uppercase card headings and square cards everywhere.
+
+octo:
+  # --- Palette ---------------------------------------------------------------
+  octo-bg: "#0f0f11"
+  octo-surface: "#1b1b1e"
+  octo-surface-raised: "#242428"
+  octo-line: "#2e2e33"
+  octo-text: "#e9e7e1"
+  octo-text-muted: "#8b8a85"
+  octo-accent: "#56688c"
+  octo-accent-light: "#7d8fb3"
+  octo-neutral: "#b2b1a9"
+  octo-neutral-dark: "#1b1b1e"
+  octo-font: "'JetBrains Mono', 'Space Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+
+  # --- Typography ------------------------------------------------------------
+  primary-font-family: var(--octo-font)
+  paper-font-common-base_-_font-family: var(--octo-font)
+  paper-font-common-code_-_font-family: var(--octo-font)
+  paper-font-body1_-_font-family: var(--octo-font)
+  paper-font-subhead_-_font-family: var(--octo-font)
+  paper-font-headline_-_font-family: var(--octo-font)
+  paper-font-caption_-_font-family: var(--octo-font)
+  paper-font-title_-_font-family: var(--octo-font)
+  ha-card-header-font-family: var(--octo-font)
+  mdc-typography-font-family: var(--octo-font)
+  mdc-typography-button-font-family: var(--octo-font)
+  mdc-typography-body1-font-family: var(--octo-font)
+  mdc-typography-body2-font-family: var(--octo-font)
+  ha-font-family-body: var(--octo-font)
+  ha-font-family-heading: var(--octo-font)
+  ha-font-family-code: var(--octo-font)
+  ha-font-family-longform: var(--octo-font)
+  ha-card-header-font-size: 14px
+  ha-font-weight-normal: "400"
+  ha-font-weight-medium: "500"
+  ha-font-weight-bold: "600"
+
+  modes:
+    dark:
+      # Core
+      primary-color: var(--octo-accent)
+      accent-color: var(--octo-accent-light)
+      dark-primary-color: var(--octo-accent)
+      light-primary-color: var(--octo-accent-light)
+      primary-text-color: var(--octo-text)
+      secondary-text-color: var(--octo-text-muted)
+      text-primary-color: var(--octo-text)
+      text-light-primary-color: var(--octo-text)
+      disabled-text-color: "#55544f"
+      divider-color: var(--octo-line)
+      outline-color: var(--octo-line)
+      scrollbar-thumb-color: var(--octo-line)
+
+      # Backgrounds
+      primary-background-color: var(--octo-bg)
+      secondary-background-color: var(--octo-surface)
+      lovelace-background: var(--octo-bg)
+      view-background: var(--octo-bg)
+      card-background-color: var(--octo-surface)
+      ha-card-background: var(--octo-surface)
+      clear-background-color: var(--octo-bg)
+      code-editor-background-color: var(--octo-bg)
+      markdown-code-background-color: var(--octo-bg)
+
+      # Cards - flat and square
+      ha-card-border-radius: "0px"
+      ha-card-border-width: "0px"
+      ha-card-border-color: transparent
+      ha-card-box-shadow: none
+      ha-dialog-border-radius: "0px"
+      ha-dialog-surface-background: var(--octo-surface)
+      mdc-theme-surface: var(--octo-surface)
+      mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.7)"
+      ha-border-radius-sm: "0px"
+      ha-border-radius-md: "0px"
+      ha-border-radius-lg: "0px"
+      ha-border-radius-xl: "0px"
+      ha-border-radius-pill: "0px"
+      ha-tile-border-radius: "0px"
+      ha-badge-border-radius: "0px"
+      control-button-border-radius: "0px"
+      feature-border-radius: "0px"
+      feature-button-spacing: 6px
+
+      # Header / sidebar
+      app-header-background-color: var(--octo-bg)
+      app-header-text-color: var(--octo-text)
+      app-header-selection-bar-color: var(--octo-accent-light)
+      app-header-edit-background-color: var(--octo-surface-raised)
+      app-header-edit-text-color: var(--octo-text)
+      sidebar-background-color: var(--octo-bg)
+      sidebar-text-color: var(--octo-text-muted)
+      sidebar-icon-color: var(--octo-text-muted)
+      sidebar-selected-text-color: var(--octo-text)
+      sidebar-selected-icon-color: var(--octo-accent-light)
+      sidebar-menu-button-text-color: var(--octo-text)
+      sidebar-menu-button-background-color: var(--octo-bg)
+
+      # Icons & states
+      paper-item-icon-color: var(--octo-text-muted)
+      paper-item-icon-active-color: var(--octo-accent-light)
+      state-icon-color: var(--octo-text-muted)
+      state-icon-active-color: var(--octo-accent-light)
+      state-active-color: var(--octo-accent-light)
+      state-inactive-color: var(--octo-text-muted)
+      state-on-color: var(--octo-accent-light)
+      state-off-color: var(--octo-text-muted)
+      state-unavailable-color: "#55544f"
+      state-light-active-color: var(--octo-neutral)
+      state-switch-active-color: var(--octo-accent-light)
+      state-fan-active-color: var(--octo-accent-light)
+      state-media_player-active-color: var(--octo-accent-light)
+      state-climate-heat-color: var(--octo-neutral)
+      state-climate-cool-color: var(--octo-accent-light)
+      state-climate-auto-color: var(--octo-accent-light)
+      state-climate-heat_cool-color: var(--octo-neutral)
+      state-climate-dry-color: var(--octo-neutral)
+      state-climate-fan_only-color: var(--octo-accent-light)
+      state-cover-active-color: var(--octo-accent-light)
+      state-lock-locked-color: var(--octo-accent-light)
+      state-lock-unlocked-color: var(--octo-neutral)
+      state-binary_sensor-active-color: var(--octo-accent-light)
+      state-alarm_control_panel-armed_away-color: var(--octo-accent-light)
+      state-alarm_control_panel-disarmed-color: var(--octo-neutral)
+
+      # Status colours - kept muted to stay on-palette
+      success-color: "#8fa58a"
+      warning-color: "#c9b27c"
+      error-color: "#c47f76"
+      info-color: var(--octo-accent-light)
+
+      # Controls
+      switch-checked-color: var(--octo-accent-light)
+      switch-checked-button-color: var(--octo-text)
+      switch-checked-track-color: var(--octo-accent)
+      switch-unchecked-button-color: var(--octo-text-muted)
+      switch-unchecked-track-color: var(--octo-line)
+      slider-color: var(--octo-accent)
+      slider-secondary-color: var(--octo-line)
+      slider-bar-color: var(--octo-line)
+      paper-slider-knob-color: var(--octo-text)
+      paper-slider-active-color: var(--octo-accent)
+      paper-slider-container-color: var(--octo-line)
+      mdc-theme-primary: var(--octo-accent-light)
+      mdc-theme-secondary: var(--octo-accent)
+      mdc-theme-on-primary: var(--octo-text)
+      mdc-theme-on-secondary: var(--octo-text)
+      mdc-theme-text-primary-on-background: var(--octo-text)
+      mdc-select-fill-color: var(--octo-surface-raised)
+      mdc-text-field-fill-color: var(--octo-surface-raised)
+      input-fill-color: var(--octo-surface-raised)
+      input-ink-color: var(--octo-text)
+      input-label-ink-color: var(--octo-text-muted)
+      input-idle-line-color: var(--octo-line)
+      input-hover-line-color: var(--octo-text-muted)
+      table-row-background-color: var(--octo-surface)
+      table-row-alternative-background-color: var(--octo-surface-raised)
+      data-table-background-color: var(--octo-surface)
+
+      # Gauge
+      gauge-color: var(--octo-accent)
+      gauge-background-color: var(--octo-line)
+
+      # Charts - accent first, then neutrals
+      graph-color-1: var(--octo-accent-light)
+      graph-color-2: var(--octo-neutral)
+      graph-color-3: "#6e6d68"
+      graph-color-4: "#3f4d68"
+      graph-color-5: "#d6d4cc"
+      history-unknown-color: var(--octo-line)
+      energy-grid-consumption-color: var(--octo-neutral)
+      energy-grid-return-color: var(--octo-accent-light)
+      energy-solar-color: "#c9b27c"
+      energy-battery-in-color: var(--octo-accent)
+      energy-battery-out-color: var(--octo-neutral)
+      energy-gas-color: "#6e6d68"
+      energy-water-color: var(--octo-accent-light)
+
+      # Badges
+      label-badge-background-color: var(--octo-surface)
+      label-badge-text-color: var(--octo-text)
+      label-badge-red: var(--octo-accent)
+      ha-badge-background-color: var(--octo-surface)
+      ha-badge-border-color: var(--octo-line)
+
+    light:
+      # Greige paper, ink text, same slate accent
+      primary-color: var(--octo-accent)
+      accent-color: var(--octo-accent)
+      primary-text-color: "#161618"
+      secondary-text-color: "#5f5e59"
+      text-primary-color: "#f4f3ef"
+      disabled-text-color: "#a3a29c"
+      divider-color: "#cfcdc6"
+      outline-color: "#cfcdc6"
+      primary-background-color: "#e4e2dc"
+      secondary-background-color: "#f1f0ec"
+      lovelace-background: "#e4e2dc"
+      card-background-color: "#f4f3ef"
+      ha-card-background: "#f4f3ef"
+      ha-card-border-radius: "0px"
+      ha-card-border-width: "0px"
+      ha-card-box-shadow: none
+      ha-dialog-border-radius: "0px"
+      ha-border-radius-sm: "0px"
+      ha-border-radius-md: "0px"
+      ha-border-radius-lg: "0px"
+      ha-border-radius-xl: "0px"
+      ha-border-radius-pill: "0px"
+      ha-tile-border-radius: "0px"
+      ha-badge-border-radius: "0px"
+      control-button-border-radius: "0px"
+      feature-border-radius: "0px"
+      app-header-background-color: "#e4e2dc"
+      app-header-text-color: "#161618"
+      sidebar-background-color: "#e4e2dc"
+      sidebar-text-color: "#5f5e59"
+      sidebar-icon-color: "#5f5e59"
+      sidebar-selected-text-color: "#161618"
+      sidebar-selected-icon-color: var(--octo-accent)
+      paper-item-icon-color: "#5f5e59"
+      paper-item-icon-active-color: var(--octo-accent)
+      state-icon-color: "#5f5e59"
+      state-icon-active-color: var(--octo-accent)
+      state-active-color: var(--octo-accent)
+      state-on-color: var(--octo-accent)
+      state-light-active-color: var(--octo-accent)
+      success-color: "#5e7a58"
+      warning-color: "#9a7f3f"
+      error-color: "#a2544a"
+      info-color: var(--octo-accent)
+      switch-checked-color: var(--octo-accent)
+      switch-checked-track-color: var(--octo-accent)
+      slider-color: var(--octo-accent)
+      mdc-theme-primary: var(--octo-accent)
+      gauge-color: var(--octo-accent)
+      graph-color-1: var(--octo-accent)
+      graph-color-2: "#8b8a85"
+      graph-color-3: "#161618"
+      label-badge-background-color: "#f4f3ef"
+      label-badge-text-color: "#161618"
+      ha-badge-background-color: "#f4f3ef"
+
+  # --- Optional: card-mod extras (ignored if card-mod isn't installed) --------
+  card-mod-theme: octo
+  card-mod-card: |
+    ha-card {
+      font-family: var(--octo-font);
+    }
+    ha-card .card-header,
+    ha-card .name,
+    ha-card .title,
+    .primary {
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    ha-card .state,
+    ha-card .value {
+      font-variant-numeric: tabular-nums;
+    }
+  card-mod-root-yaml: |
+    .: |
+      app-header, app-toolbar, .toolbar {
+        font-family: var(--octo-font);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 14px;
+      }
+
+# Accent card helper: use `theme: octo-accent` on a single card for the slate-blue tile look.
+octo-accent:
+  octo-font: "'JetBrains Mono', 'Space Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+  primary-font-family: var(--octo-font)
+  ha-card-background: "#56688c"
+  card-background-color: "#56688c"
+  ha-card-border-radius: "0px"
+  ha-card-box-shadow: none
+  primary-text-color: "#f4f3ef"
+  secondary-text-color: "#d4d9e4"
+  state-icon-color: "#f4f3ef"
+  state-icon-active-color: "#f4f3ef"
+  primary-color: "#f4f3ef"
+  gauge-color: "#f4f3ef"
+  divider-color: "rgba(255,255,255,0.2)"
+
+# Neutral card helper: `theme: octo-neutral` for the greige tile look.
+octo-neutral:
+  octo-font: "'JetBrains Mono', 'Space Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+  primary-font-family: var(--octo-font)
+  ha-card-background: "#b2b1a9"
+  card-background-color: "#b2b1a9"
+  ha-card-border-radius: "0px"
+  ha-card-box-shadow: none
+  primary-text-color: "#161618"
+  secondary-text-color: "#3a3a3d"
+  state-icon-color: "#161618"
+  state-icon-active-color: "#161618"
+  primary-color: "#161618"
+  gauge-color: "#161618"
+  divider-color: "rgba(0,0,0,0.15)"

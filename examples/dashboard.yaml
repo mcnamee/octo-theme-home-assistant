@@ -1,0 +1,35 @@
+# Example view mirroring the reference layout. Swap the entity IDs for your own.
+# Cards using `theme:` pick up the accent / neutral tile styles.
+title: Home
+views:
+  - title: Overview
+    type: sections
+    max_columns: 4
+    sections:
+      - type: grid
+        cards:
+          - type: gauge
+            theme: octo-accent
+            name: Today's energy
+            entity: sensor.energy_today
+            min: 0
+            max: 30
+          - type: entity
+            name: Indoor temp
+            entity: sensor.living_room_temperature
+      - type: grid
+        cards:
+          - type: statistics-graph
+            title: Power
+            chart_type: bar
+            period: day
+            days_to_show: 5
+            entities:
+              - sensor.house_power
+      - type: grid
+        cards:
+          - type: markdown
+            theme: octo-neutral
+            content: |
+              ## CUSTOM DASHBOARD
+              Monospace, flat, low colour.
